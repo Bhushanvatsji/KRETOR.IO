@@ -1,7 +1,11 @@
 {
-  "name": "kretor.io-root",
+  "name": "kretor.io-monorepo",
   "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "build": "cd frontend && npm install && npm run build"
+    "build": "npm run build --workspace=frontend"
   }
 }
